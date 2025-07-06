@@ -1,0 +1,465 @@
+.footer__nav--mobile {
+    background-image: url("../../img/header_footer/header_footer.jpeg");
+    background-position: 0% 70%;
+}
+
+.footer__form--mobile {
+    display: none;
+
+    @include mobile {
+    display: block;    
+    margin: 0 auto; 
+    width: 100%;
+    height: 436px;
+    backdrop-filter: blur(56.27775192260742px);
+    background: rgba(255, 255, 255, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+.footer__form--mobile-title {
+    padding-top: 67px;
+    padding-bottom: 17px;
+}
+
+.footer__form--mobile-subtitle {
+    padding-bottom: 42px;
+}
+
+.footer__form--mobile-form{
+    text-align: -webkit-center;
+}
+
+.footer__form--mobile-input {
+    border-bottom: 1px solid var(--242734);
+    height: 37px;
+    width: 288px;
+    transition: 0.3s;
+
+    &:hover{
+      border-bottom: 1px solid var(--ffdf6d);
+    }
+    // &:focus{
+    //   border-bottom: 1px solid  var(--FFFFFF);
+    // }
+
+}
+
+.footer__form--mobile-wrapper {
+    height: 56px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ffdf6d);
+    box-shadow: 5px 5px 30px var(--ffdf6d);
+    transition: all .3s;
+    margin-top: 33px;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+}
+
+.footer__form--mobile-notification {
+    top: 18px;
+    position: relative;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    gap: 8px;
+    opacity: 0.4;
+}
+
+.footer__nav {
+    display: grid;
+    align-content: space-between;
+    background: var(--eef0f4);
+    margin-top: auto;
+    background-image: url("../../img/header_footer/header_footer.jpeg");
+    background-size: 1925px;
+    height: 1215px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-attachment: fixed;
+    padding-top: 77px;
+
+    @include mobile {
+        height: 265px;
+        background-size: 571px;
+    }
+}
+
+.footer__form {
+    margin: 0 auto; 
+    width: 632px;
+    height: 486px;
+    backdrop-filter: blur(80px);
+    background: rgba(255, 255, 255, 0.24);
+    padding-left: 111px;
+    padding-top: 64px;
+
+    @include mobile {
+       display: none; 
+    }
+}
+
+.footer__form-subtitle {
+    padding-top: 22px;
+    padding-bottom: 42px;
+} 
+
+.footer__form-input {
+    border-bottom: 1px solid var(--242734);
+    height: 37px;
+    width: 414px;
+    transition: 0.3s;
+
+    &:hover{
+      border-bottom: 1px solid var(--ffdf6d);
+    }
+    // &:focus{
+    //   border-bottom: 1px solid  var(--FFFFFF);
+    // }
+}
+
+.footer__form-wrapper {
+    height: 56px;
+    width: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ffdf6d);
+    box-shadow: 5px 5px 30px var(--ffdf6d);
+    transition: all .3s;
+    margin-top: 33px;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+}
+
+.footer__form-notification {
+    top: 18px;
+    position: relative;
+    height: 14px;
+    display: flex;
+    gap: 8px;
+    opacity: 0.4;
+}
+
+.footer__menu {
+    width: 100%;
+    backdrop-filter: blur(60px);
+    background: rgba(255, 255, 255, 0.01);
+
+    @include tablet-1000 {
+        height: fit-content;
+    }
+}
+
+
+.footer__menu-top {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 62px;
+
+    @include tablet-1000 {
+        display: none;
+    }
+}
+
+  // .footer_menu-top-contact {
+  // }
+
+.footer__menu-personal {
+    transition: 1s;
+
+    &:hover {
+      color:var(--ffdf6d);
+    }
+}
+
+  // .footer_menu-top-logo {
+  // }
+
+.footer__menu-organization {
+    transition: 1s;
+
+    &:hover {
+        color:var(--ffdf6d);
+    }
+    
+    @include tablet-1000 {
+        padding-left: 18px;
+        padding-top: 49px;
+    }
+}
+
+  // .footer__menu-bottom-contact {
+    
+  // }
+
+.footer__phone {
+    display: none;
+
+    @include tablet-1000 {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+.footer__phone-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 43px;
+}
+
+.footer__phone-contact {
+    display: flex;
+    flex-direction: column;
+      
+    @include tablet-1000 {
+      padding-top: 49px;
+      padding-left: 18px;
+    }
+}
+
+.footer__menu-bottom-li {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 75px;
+}
+
+.link {
+    position: relative;
+}
+
+.link:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #282c34;
+    transition: .3s;
+}
+
+.link.right:after {
+    right: 0;
+}
+
+.link.left:after {
+    left: 0;
+}
+
+.link.center:after {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.link:hover:after {
+    width: 100%;
+}
+  
+  /* ----- top -----  */
+.link.top:after {
+    left: 0;
+    width: 100%;
+    bottom: 5px;
+    opacity: 0;
+}
+  
+.link.top:hover:after {
+    opacity: 1;
+    bottom: 0
+}
+  
+  /* ----- bottom -----  */
+.link.bottom:after {
+    left: 0;
+    width: 100%;
+    bottom: -5px;
+    opacity: 0;
+}
+  
+.link.bottom:hover:after {
+    opacity: 1;
+    bottom: 0
+}
+
+.footer__nav-st--1 {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    padding-top: 95px;
+    padding-bottom: 38px;
+}
+
+.footer__nav-st--2 {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    padding-top: 95px;
+    padding-bottom: 38px;
+    text-align: right;
+}
+
+.footer__nav-menu {
+    padding-bottom: 33px;
+
+    @include tablet-1000 {
+       display: none; 
+    }
+}
+
+.footer__nav-column {
+
+    @include tablet-1000 {
+       display: none; 
+    }
+}
+
+.footer__nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 72px;
+}
+
+
+.footer__nav-li {
+    position: relative; /* Необходимо для псевдоэлемента */
+    padding: 7px 0; /* Отступы для улучшения видимости */
+}
+
+.footer__nav-link {
+    display: inline-block; /* Чтобы псевдоэлемент подстраивался под ширину текста */
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    color: inherit; /* Наследуем цвет текста */
+    position: relative; /* Для псевдоэлемента */
+}
+
+.footer__nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; /* Начинаем с левой стороны */
+    bottom: -2px; /* Расстояние от текста */
+    width: 100%; /* Делаем ширину равной ширине текста */
+    height: 1px; /* Высота нижней границы */
+    background-color: #282c34; /* Цвет нижней границы */
+    opacity: 0; /* Начальное состояние - невидимо */
+    transition: opacity 0.3s; /* Плавный переход для изменения прозрачности */
+}
+
+.footer__nav-link:hover::after {
+    opacity: 1; /* Показываем нижнюю границу при наведении */
+}
+
+
+.footer__nav-mobile {
+    display: none;
+
+    @include tablet-1000 {
+        display: flex;
+        justify-content: space-around; 
+    }
+}
+
+.site {
+    margin: 0 auto;
+    width: 100%;
+    height: 67px;
+    background: var(--242734);
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+        display: none; 
+    }
+}
+  
+.site__stripe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+  
+.site__a {
+    &:hover {
+        text-decoration: underline; 
+    }
+}
+
+// .site__mobile {
+// }
+
+.site__mobile-stripe {
+    background: var(--242734);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__menu-new {
+    width: 100%;
+    height: 263px;
+    backdrop-filter: blur(60px);
+    background: rgba(255, 255, 255, 0.01);
+
+    @include tablet-1000 {
+        height: fit-content;
+    }
+}
+
+.footer_menu-mobile--top-new {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 62px;
+}
+
+.site__small {
+    display: none;
+
+    @include mobile {
+        margin: 0 auto;
+        width: 100%;
+        height: 67px;
+        background-color: var(--242734);
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+.site__small-stripe {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 21px;
+    width: 100%; /* Занимаем всю ширину родителя */
+}
+
+.site__small-name {
+    display: flex;
+    gap: 5px;
+}
+
+.site__small-a {
+   &:hover {
+        text-decoration: underline; 
+    }
+}
+
+
+
+
+
+
+
+

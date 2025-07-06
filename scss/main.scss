@@ -1,0 +1,24 @@
+@import "./../fonts/stylesheet.css";
+// Base
+@import './base/mixins';
+@import './base/vars';
+@import './base/reset';
+@import './base/base';
+@import './base/containers';
+@import './base/utils';
+
+// Blocks
+@import './blocks/header';
+@import './blocks/nav-icon';
+@import './blocks/nav';
+@import './blocks/logo';
+@import './blocks/main';
+@import './blocks/mobile-nav';
+@import './blocks/titles';
+@import './blocks/service';
+@import './blocks/conditions';
+@import './blocks/cards';
+@import './blocks/work';
+@import './blocks/Intelligence';
+@import './blocks/footer-nav';
+
